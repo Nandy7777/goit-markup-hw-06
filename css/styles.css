@@ -809,7 +809,7 @@ img {
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-    color: #757575;
+    color: var(--sercondary-text-color);
     display: block;
     margin-bottom: 4px;
 }
@@ -856,6 +856,7 @@ img {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
+    margin-bottom: 20px;
 
     outline: none;
 }
@@ -868,5 +869,51 @@ img {
     display: block;
     margin-right: auto;
     margin-left: auto;
+}
+
+.check-text{
+    color: var(--sercondary-text-color);
+    line-height: 1.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.check-text span{
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 3px;
+    margin-right: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition-property: border-color;
+    transition-duration: var(--duration-time);
+    transition-timing-function: var(--timing-function);
+}
+
+.check-icon{
+    fill: transparent;
+}
+
+.input-check:checked + .check-text span{
+    background-color: var(--accent-color);
+    border: none;
+}
+
+.input-check:focus + .check-text span{
+    border-color: var(--accent-color);
+}
+
+.input-check:checked + .check-text .check-icon{
+    fill: var(--primary-white-color);
+}
+.check-conditions{
+    text-decoration: none;
+    text-decoration-line: underline;
+    color: var(--accent-color);
 
 }

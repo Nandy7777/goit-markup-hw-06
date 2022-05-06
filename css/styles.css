@@ -556,8 +556,7 @@ img {
     margin-right: 93px;
 }
 
-.connect-title,
-.submit-title {
+.connect-title {
     font-size: 14px;
     color: var(--primary-white-color);
     text-transform: uppercase;
@@ -606,27 +605,60 @@ img {
     fill: var(--primary-white-color);
 }
 
+.submit-title{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    margin-bottom: 20px;
+}
+
 .submit-fild{
-    width: 350px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
+    display: flex;
 }
 
 .submit-input{
-    margin: 0;
-    padding: 15px 16px;
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: inherit;
     font-size: 16px;
     line-height: 1.25;
-    
-    background-color: #2F303A;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    margin-right: 12px;
+
 }
 
 .submit-input::placeholder{
     color: rgba(255, 255, 255, 0.6);
-
 }
+
+.submit-btn{
+    position: relative;
+    
+    
+    min-width: 200px;
+    padding: 10px 28px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+}
+
+.submit-icon-send{
+    position: absolute;
+    
+    
+    right: 28px;
+    
+    bottom: 13px;
+    
+    fill: var(--primary-white-color);
+}
+
+
 /* -----------------------------------FILTER PORTFOLIO-------------------- */
 .portfolio{
     padding-top: 94px;
